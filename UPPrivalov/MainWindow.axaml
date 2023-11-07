@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPPrivalov.MainWindow"
+        Title="UPPrivalov">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <TextBlock HorizontalAlignment="Center">Введите логин</TextBlock>
+            <TextBox Name="LoginBox" Margin="0 0 0 5"></TextBox>
+            
+            <TextBlock HorizontalAlignment="Center">Введите пароль</TextBlock>
+            <TextBox Name="PasswordBox" Margin="0 0 0 10"></TextBox>
+            
+            <Button Click="Login" HorizontalAlignment="Center">Войти</Button>
+            
+            <Button Click="Register" HorizontalAlignment="Center">Зарегистрироваться</Button>
+        </StackPanel>
+    </Grid>
+</Window>

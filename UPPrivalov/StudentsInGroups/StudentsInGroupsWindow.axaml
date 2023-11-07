@@ -1,0 +1,26 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPPrivalov.StudentsInGroups.StudentsInGroupsWindow"
+        Title="StudentsInGroupsWindow">
+    <Grid>
+        <StackPanel>
+            <DataGrid Name="StudentsInGroupsDataGrid" x:CompileBindings="False" Height="300">
+                <DataGrid.Columns>
+                    
+                    <DataGridTextColumn Header="ID" Binding="{Binding StudentInGroupID}"/>
+                    <DataGridTextColumn Header="Student" Binding="{Binding Student}"/>
+                    <DataGridTextColumn Header="Group" Binding="{Binding SGroup}"/> 
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            <Button HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
+            
+            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>

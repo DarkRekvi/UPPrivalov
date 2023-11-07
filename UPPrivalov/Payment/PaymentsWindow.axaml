@@ -1,0 +1,24 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPPrivalov.PaymentsWindow"
+        Title="PaymentsWindow">
+    <Grid>
+        <StackPanel>
+            <DataGrid Name="PaymentsDataGrid" x:CompileBindings="False" Height="300">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding PaymentID}"/>
+                    <DataGridTextColumn Header="Курс" Binding="{Binding CourseName}"/>
+                    <DataGridTextColumn Header="Описание" Binding="{Binding Student}"/> 
+                    <DataGridTextColumn Header="Язык" Binding="{Binding CourseSum}"/>
+                    <DataGridTextColumn Header="Тип оплаты" Binding="{Binding Payment_type}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>
