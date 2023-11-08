@@ -9,10 +9,15 @@ namespace UPPrivalov;
 
 public partial class Result1Win : Window
 {
+    private string _constring =
+        "SERVER=sql12.freesqldatabase.com;DATABASE=sql12659906;UID=sql12659906;PASSWORD=fkfP8wwq9S;";
+    
+    private MySqlConnection _connection;
     public Result1Win()
     {
         InitializeComponent();
         CountBlock.Text = getResults().ToString();
+        AmountBlock.Text = getAmount().ToString() + " руб";
     }
 
     private int getResults()
@@ -31,6 +36,20 @@ public partial class Result1Win : Window
         }
     }
 
+    private double getAmount()
+    {
+        double sum = 0;
+        _connection = new MySqlConnection(_constring);
+        _connection.Open();
+        MySqlCommand command = new MySqlCommand("SELECT Sum FROM Payments", _connection);
+        MySqlDataReader reader = command.ExecuteReader();
+        while (reader.Read() && reader.HasRows)
+        {
+            sum += reader.GetDouble("Sum");
+        }
+        _connection.Close();
+        return sum;
+    }
     private void Back(object? sender, RoutedEventArgs e)
     {
         MenuWindow mwin = new MenuWindow();

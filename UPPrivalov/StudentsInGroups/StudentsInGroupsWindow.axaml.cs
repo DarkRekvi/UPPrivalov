@@ -61,4 +61,18 @@ public partial class StudentsInGroupsWindow : Window
         mwin.Show();
         this.Close();
     }
+    
+    private void Button_OnClick_Delete(object? sender, RoutedEventArgs e)
+    {
+        using (var conn = new MySqlConnection(_constring))
+        {
+            conn.Open();
+            using (var cmd = new MySqlCommand("DELETE FROM Students_In_Groups WHERE Students_In_Groups_ID LIKE " + IDTextBox.Text, conn))
+            {
+                cmd.ExecuteNonQuery();
+                ShowTable(fulltable);
+            }
+            conn.Close();
+        }
+    } 
 }

@@ -10,10 +10,13 @@
         Title="Result1Win">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock>Количество покупок</TextBlock>
-            <TextBlock Name="CountBlock"></TextBlock>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Количество покупок</TextBlock>
+            <TextBlock FontSize="20" Margin="5" Padding="5" Width="300" Background="DarkOrange" Foreground="Black" HorizontalAlignment="Center" Name="CountBlock"></TextBlock>
             
-            <Button HorizontalAlignment="Center" Click="Back">Back</Button>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Сумма выручки</TextBlock>
+            <TextBlock FontSize="20" Margin="5" Padding="5" Width="300" Background="DarkOrange" Foreground="Black" HorizontalAlignment="Center" Name="AmountBlock"></TextBlock>
+            
+            <Button Background="Orange" Margin="10" HorizontalAlignment="Center" Click="Back">Back</Button>
         </StackPanel>
     </Grid>
 </Window>

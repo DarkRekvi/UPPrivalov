@@ -21,6 +21,12 @@
             
             <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
             
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <TextBlock Foreground="Orange" VerticalAlignment="Center" Margin="5">If teacher's ID:</TextBlock>
+                <TextBox Background="black" Foreground="Orange" VerticalAlignment="Center" Margin="5" Name="IDTextBox"></TextBox>
+                <Button Background="Orange" Foreground="Black" VerticalAlignment="Center" Click="Button_OnClick_Delete" HorizontalAlignment="Center" Margin="5" >Delete</Button>
+            </StackPanel> 
+            
             <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
             
         </StackPanel>
