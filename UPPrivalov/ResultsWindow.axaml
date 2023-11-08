@@ -4,9 +4,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.ResultsWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="ResultsWindow">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button HorizontalAlignment="Center" Click="Result1" Margin="10">Отчёт по продажам</Button>
-        <Button HorizontalAlignment="Center" Click="Back">Back</Button>
+        <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="Result1" Margin="10">Отчёт по продажам</Button>
+        <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="Back">Back</Button>
     </StackPanel>
 </Window>

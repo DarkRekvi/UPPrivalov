@@ -4,24 +4,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.Teachers.TeachersWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="TeachersWindow">
     <Grid>
         <StackPanel>
-            <DataGrid Name="TeachersDataGrid" x:CompileBindings="False" Height="300">
+            <DataGrid Name="TeachersDataGrid" x:CompileBindings="False" Height="300" Background="Black">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding TeacherID}"/>
-                    <DataGridTextColumn Header="Имя" Binding="{Binding TeacherName}"/>
-                    <DataGridTextColumn Header="Фамилия" Binding="{Binding TeacherSurname}"/> 
-                    <DataGridTextColumn Header="Отчество" Binding="{Binding TeacherLastName}"/>
-                    <DataGridTextColumn Header="День рождения" Binding="{Binding TeacherBirthday}"/>
-                    <DataGridTextColumn Header="Номер телефона" Binding="{Binding TeacherPhone}"/> 
-                    <DataGridTextColumn Header="Почта" Binding="{Binding TeacherEmail}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="ID" Binding="{Binding TeacherID}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Имя" Binding="{Binding TeacherName}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Фамилия" Binding="{Binding TeacherSurname}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="Отчество" Binding="{Binding TeacherLastName}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="День рождения" Binding="{Binding TeacherBirthday}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Номер телефона" Binding="{Binding TeacherPhone}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="Почта" Binding="{Binding TeacherEmail}"/>
                 </DataGrid.Columns>
             </DataGrid>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
             
         </StackPanel>
     </Grid>

@@ -4,45 +4,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.RegisterWindow"
+        Height="1500" Width="750"
+        Background="DarkSlateBlue"
         Title="RegisterWindow">
-    <Grid Height="500" Width="500">
+    <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             
-            <TextBlock HorizontalAlignment="Center">Введите имя</TextBlock>
-            <TextBox Name="NameBox" Margin="0 0 0 5"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите имя</TextBlock>
+            <TextBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="NameBox"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите фамилию</TextBlock>
-            <TextBox Name="SurnameBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите фамилию</TextBlock>
+            <TextBox Margin="10" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="SurnameBox"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите отчество</TextBlock>
-            <TextBox Name="LastNameBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите отчество</TextBlock>
+            <TextBox Margin="5" Padding="5" Width="300" Background="Black"  Foreground="Orange" Name="LastNameBox"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите день рождения</TextBlock>
-            <DatePicker Name="BirthdayPicker"></DatePicker>
+            <TextBlock Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите день рождения</TextBlock>
+            <DatePicker Margin="5" Padding="5" Background="Black" Foreground="Orange" Name="BirthdayPicker"></DatePicker>
             
-            <TextBlock HorizontalAlignment="Center">Введите номер телефона</TextBlock>
-            <TextBox Name="PhoneBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите номер телефона</TextBlock>
+            <TextBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="PhoneBox"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите электронную почту</TextBlock>
-            <TextBox Name="EmailBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите электронную почту</TextBlock>
+            <TextBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="EmailBox"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите уровень владения языком</TextBlock>
-            <ComboBox Name="LevelsComboBox"></ComboBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите уровень владения языком</TextBlock>
+            <ComboBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="LevelsComboBox"></ComboBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите опыт в изучении языка</TextBlock>
-            <ComboBox Name="ExpComboBox"></ComboBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите опыт в изучении языка</TextBlock>
+            <ComboBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="ExpComboBox"></ComboBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите логин</TextBlock>
-            <TextBox Name="LoginBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите логин</TextBlock>
+            <TextBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="LoginBox"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите пароль</TextBlock>
-            <TextBox Name="PasswordBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Margin="5" Padding="5" Width="300" Background="Orange" Foreground="Black" HorizontalAlignment="Center">Введите пароль</TextBlock>
+            <TextBox Margin="5" Padding="5" Width="300" Background="Black" Foreground="Orange" Name="PasswordBox"></TextBox>
             
             <TextBlock Name="ErrorBlock" HorizontalAlignment="Center" Background="Red"></TextBlock>
             
-            <Button Click="Register" HorizontalAlignment="Center">Зарегистрироваться</Button>
+            <Button FontSize="20" Margin="10" Background="Orange" Foreground="Black" Click="Register" HorizontalAlignment="Center">Зарегистрироваться</Button>
             
-            <Button Click="Cancel" HorizontalAlignment="Center">Отмена</Button>
+            <Button FontSize="20" Background="Orange" Foreground="Black" Click="Cancel" HorizontalAlignment="Center">Отмена</Button>
         </StackPanel>
     </Grid>
 </Window>

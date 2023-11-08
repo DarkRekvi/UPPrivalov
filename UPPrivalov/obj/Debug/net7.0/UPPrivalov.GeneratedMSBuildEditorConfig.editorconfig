@@ -33,6 +33,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [D:/Programs/CollegeTraining/Project2/UPPrivalov/UPPrivalov/MenuWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[D:/Programs/CollegeTraining/Project2/UPPrivalov/UPPrivalov/Payment/PaymentAddWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [D:/Programs/CollegeTraining/Project2/UPPrivalov/UPPrivalov/Payment/PaymentsWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

@@ -4,6 +4,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.Result1Win"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="Result1Win">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">

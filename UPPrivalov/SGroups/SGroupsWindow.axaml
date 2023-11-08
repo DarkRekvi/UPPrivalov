@@ -4,24 +4,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.SGroups.SGroupsWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="SGroupsWindow">
     <Grid>
         <StackPanel>
-            <DataGrid Name="SGroupsDataGrid" x:CompileBindings="False" Height="300">
+            <DataGrid Name="SGroupsDataGrid" x:CompileBindings="False" Height="300" Background="Black">
                 <DataGrid.Columns>
                     
-                    <DataGridTextColumn Header="GroupID" Binding="{Binding GroupID}"/>
-                    <DataGridTextColumn Header="GroupName" Binding="{Binding GroupName}"/>
-                    <DataGridTextColumn Header="GroupTeacher" Binding="{Binding GroupTeacher}"/> 
-                    <DataGridTextColumn Header="MaxStudents" Binding="{Binding MaxStudents}"/>
-                    <DataGridTextColumn Header="Course" Binding="{Binding Course}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="GroupID" Binding="{Binding GroupID}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="GroupName" Binding="{Binding GroupName}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="GroupTeacher" Binding="{Binding GroupTeacher}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="MaxStudents" Binding="{Binding MaxStudents}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Course" Binding="{Binding Course}"/>
                     
                 </DataGrid.Columns>
             </DataGrid>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
             
         </StackPanel>
     </Grid>

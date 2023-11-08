@@ -3,27 +3,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         x:Class="UPPrivalov.Students.StudentsWindow"
         Title="StudentsWindow">
     <Grid>
         <StackPanel>
-            <DataGrid Name="StudentsDataGrid" x:CompileBindings="False" Height="300">
+            <DataGrid Name="StudentsDataGrid" x:CompileBindings="False" Height="300" Background="Black">
                 <DataGrid.Columns>
                     
-                    <DataGridTextColumn Header="StudentID" Binding="{Binding StudentID}"/>
-                    <DataGridTextColumn Header="StudentName" Binding="{Binding StudentName}"/>
-                    <DataGridTextColumn Header="StudentSurname" Binding="{Binding StudentSurname}"/> 
-                    <DataGridTextColumn Header="StudentLastName" Binding="{Binding StudentLastName}"/>
-                    <DataGridTextColumn Header="StudentBirthday" Binding="{Binding StudentBirthday}"/>
-                    <DataGridTextColumn Header="StudentPhone" Binding="{Binding StudentPhone}"/> 
-                    <DataGridTextColumn Header="StudentEmail" Binding="{Binding StudentEmail}"/>
-                    <DataGridTextColumn Header="StudentLangExp" Binding="{Binding StudentLangExp}"/>
-                    <DataGridTextColumn Header="StudentLangLvl" Binding="{Binding StudentLangLvl}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="StudentID" Binding="{Binding StudentID}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="StudentName" Binding="{Binding StudentName}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="StudentSurname" Binding="{Binding StudentSurname}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="StudentLastName" Binding="{Binding StudentLastName}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="StudentBirthday" Binding="{Binding StudentBirthday}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="StudentPhone" Binding="{Binding StudentPhone}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="StudentEmail" Binding="{Binding StudentEmail}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="StudentLangExp" Binding="{Binding StudentLangExp}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="StudentLangLvl" Binding="{Binding StudentLangLvl}"/> 
                     
                 </DataGrid.Columns>
             </DataGrid>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
             
         </StackPanel>
     </Grid>

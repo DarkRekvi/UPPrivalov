@@ -4,21 +4,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.MenuWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="MenuWindow">
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             
             <StackPanel>
                 <TextBlock FontSize="25" Margin="0 0 0 10">LanguageModule</TextBlock>
-                <Button HorizontalAlignment="Center" Click="CoursesButton" Margin="10">Courses</Button>
-                <Button HorizontalAlignment="Center" Click="AttendancesButton" Margin="10">Attendances</Button>
-                <Button HorizontalAlignment="Center" Click="PaymentsButton" Margin="10">Payments</Button>
-                <Button HorizontalAlignment="Center" Click="StudentsButton" Margin="10">Students</Button>
-                <Button HorizontalAlignment="Center" Click="GroupsButton" Margin="10">Groups</Button>
-                <Button HorizontalAlignment="Center" Click="StudentsInGroupButton" Margin="10">StudentsInGroups</Button>
-                <Button HorizontalAlignment="Center" Click="TeachersButton" Margin="10">Teachers</Button>
-                <Button HorizontalAlignment="Center" Click="ResultsButton" Margin="10">Results</Button>
-                <Button HorizontalAlignment="Center" Click="ExitButton" Margin="10">Exit</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="CoursesButton" Margin="10">Courses</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="AttendancesButton" Margin="10">Attendances</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="PaymentsButton" Margin="10">Payments</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="StudentsButton" Margin="10">Students</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="GroupsButton" Margin="10">Groups</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="StudentsInGroupButton" Margin="10">StudentsInGroups</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="TeachersButton" Margin="10">Teachers</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="ResultsButton" Margin="10">Results</Button>
+                <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Click="ExitButton" Margin="10">Exit</Button>
             </StackPanel>
             
         </StackPanel>

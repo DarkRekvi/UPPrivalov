@@ -14,6 +14,7 @@
         <entry key="UPPrivalov/Courses/CourseWindow.axaml" value="UPPrivalov/UPPrivalov.csproj" />
         <entry key="UPPrivalov/MainWindow.axaml" value="UPPrivalov/UPPrivalov.csproj" />
         <entry key="UPPrivalov/MenuWindow.axaml" value="UPPrivalov/UPPrivalov.csproj" />
+        <entry key="UPPrivalov/Payment/PaymentAddWindow.axaml" value="UPPrivalov/UPPrivalov.csproj" />
         <entry key="UPPrivalov/Payment/PaymentsWindow.axaml" value="UPPrivalov/UPPrivalov.csproj" />
         <entry key="UPPrivalov/Payments.axaml" value="UPPrivalov/UPPrivalov.csproj" />
         <entry key="UPPrivalov/PaymentsWindow.axaml" value="UPPrivalov/UPPrivalov.csproj" />

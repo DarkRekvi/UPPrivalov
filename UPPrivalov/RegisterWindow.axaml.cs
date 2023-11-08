@@ -90,6 +90,8 @@ public partial class RegisterWindow : Window
             }
             
             db.CloseConnection();
+            MainWindow w = new MainWindow();
+            w.Show();
             this.Close();
         }
     }

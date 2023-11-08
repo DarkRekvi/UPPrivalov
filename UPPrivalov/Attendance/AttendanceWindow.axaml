@@ -15,7 +15,7 @@
                 </DataGrid.Columns>
             </DataGrid>
             
-            <Button Click="Back">Back</Button>
+            <Button HorizontalAlignment="Center" Margin="10" Background="Orange" Foreground="Black" Click="Back">Back</Button>
             
         </StackPanel>
     </Grid>

@@ -4,19 +4,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.MainWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="UPPrivalov">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             
-            <TextBlock HorizontalAlignment="Center">Введите логин</TextBlock>
-            <TextBox Name="LoginBox" Margin="0 0 0 5"></TextBox>
+            <TextBlock Background="Orange" Foreground="Black" Width="300" Padding="10" FontSize="20" Margin="10" HorizontalAlignment="Center">Введите логин</TextBlock>
+            <TextBox Background="Black" Foreground="Orange" Width="300" Padding="10" FontSize="20" Name="LoginBox" Margin="0 0 0 5"></TextBox>
             
-            <TextBlock HorizontalAlignment="Center">Введите пароль</TextBlock>
-            <TextBox Name="PasswordBox" Margin="0 0 0 10"></TextBox>
+            <TextBlock Background="Orange" Foreground="Black" Width="300" Padding="10" FontSize="20" Margin="10" HorizontalAlignment="Center">Введите пароль</TextBlock>
+            <TextBox Background="Black" Foreground="Orange" Width="300" Padding="10" FontSize="20" Name="PasswordBox" Margin="0 0 0 10"></TextBox>
             
-            <Button Click="Login" HorizontalAlignment="Center">Войти</Button>
+            <TextBlock Name="ErrorchikBlock" Foreground="Red" Background="Black"></TextBlock>
             
-            <Button Click="Register" HorizontalAlignment="Center">Зарегистрироваться</Button>
+            <Button Background="Orange" Foreground="Black" Margin="10" FontSize="20" Click="Login" HorizontalAlignment="Center">Войти</Button>
+            
+            <Button Background="Orange" Foreground="Black" FontSize="20" Click="Register" HorizontalAlignment="Center">Зарегистрироваться</Button>
         </StackPanel>
     </Grid>
 </Window>

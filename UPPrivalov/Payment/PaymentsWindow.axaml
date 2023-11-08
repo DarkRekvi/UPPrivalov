@@ -4,20 +4,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.PaymentsWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="PaymentsWindow">
     <Grid>
         <StackPanel>
-            <DataGrid Name="PaymentsDataGrid" x:CompileBindings="False" Height="300">
+            <DataGrid Name="PaymentsDataGrid" x:CompileBindings="False" Height="300" Background="Black">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding PaymentID}"/>
-                    <DataGridTextColumn Header="Курс" Binding="{Binding CourseName}"/>
-                    <DataGridTextColumn Header="Описание" Binding="{Binding Student}"/> 
-                    <DataGridTextColumn Header="Язык" Binding="{Binding CourseSum}"/>
-                    <DataGridTextColumn Header="Тип оплаты" Binding="{Binding Payment_type}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="ID" Binding="{Binding PaymentID}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Курс" Binding="{Binding PaymentCourseName}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Клиент" Binding="{Binding PaymentStudent}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="Сумма" Binding="{Binding PaymentCourseSum}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Тип оплаты" Binding="{Binding Payment_type}"/>
                 </DataGrid.Columns>
             </DataGrid>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
+            
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
             
         </StackPanel>
     </Grid>

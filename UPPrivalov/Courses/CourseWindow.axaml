@@ -4,21 +4,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UPPrivalov.CourseWindow"
+        Background="DarkSlateBlue"
+        Height="720"
+        Width="1280"
         Title="CourseWindow">
     <Grid>
         <StackPanel>
-            <DataGrid Name="CourseDataGrid" x:CompileBindings="False" Height="300">
+            <DataGrid Name="CourseDataGrid" x:CompileBindings="False" Height="300" Background="Black">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding CourseID}"/>
-                    <DataGridTextColumn Header="Курс" Binding="{Binding CourseName}"/>
-                    <DataGridTextColumn Header="Описание" Binding="{Binding CourseDesc}"/> 
-                    <DataGridTextColumn Header="Язык" Binding="{Binding LanguageStudy}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="ID" Binding="{Binding CourseID}"/>
+                    <DataGridTextColumn Foreground="Orange" Header="Курс" Binding="{Binding CourseName}"/>
+                    <DataGridTextColumn Foreground="Orange"  Header="Описание" Binding="{Binding CourseDesc}"/> 
+                    <DataGridTextColumn Foreground="Orange" Header="Язык" Binding="{Binding LanguageStudy}"/>
                 </DataGrid.Columns>
             </DataGrid>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Add">Добавить</Button>
             
-            <Button HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
+            <Button Background="Orange" Foreground="Black" HorizontalAlignment="Center" Margin="10" Click="Back">Back</Button>
             
         </StackPanel>
     </Grid>

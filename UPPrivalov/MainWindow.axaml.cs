@@ -34,13 +34,18 @@ public partial class MainWindow : Window
 
         if (table.Rows.Count > 0)
         {
-            Console.WriteLine("Yes");
             MenuWindow mwin = new MenuWindow();
             mwin.Show();
             this.Close();
+            db.CloseConnection();
         }
-        else 
-            Console.WriteLine("No");
+        
+        else
+        {
+            ErrorchikBlock.Text = "Неверные данные";
+            db.CloseConnection();
+        }
+
     }
 
     private void Register(object? sender, RoutedEventArgs e)
